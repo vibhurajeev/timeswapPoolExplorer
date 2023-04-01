@@ -24,9 +24,149 @@ type SetOwner @entity(immutable: true) {
   transactionHash: Bytes!
 }
 
-type Pool @entity() {
+type AddFees @entity(immutable: true) {
   id: Bytes!
-  caller: Bytes! #address
-  options: Bytes! #address
-  poolPair: Bytes! #address
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  to: Bytes! # address
+  long0Fees: BigInt! # uint256
+  long1Fees: BigInt! # uint256
+  shortFees: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Burn @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  long0To: Bytes! # address
+  long1To: Bytes! # address
+  shortTo: Bytes! # address
+  liquidityAmount: BigInt! # uint160
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type CollectProtocolFees @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  long0To: Bytes! # address
+  long1To: Bytes! # address
+  shortTo: Bytes! # address
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type CollectTransactionFee @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  long0To: Bytes! # address
+  long1To: Bytes! # address
+  shortTo: Bytes! # address
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Deleverage @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  to: Bytes! # address
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Leverage @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  long0To: Bytes! # address
+  long1To: Bytes! # address
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Mint @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  to: Bytes! # address
+  liquidityAmount: BigInt! # uint160
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  shortAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Rebalance @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  caller: Bytes! # address
+  to: Bytes! # address
+  isLong0ToLong1: Boolean! # bool
+  long0Amount: BigInt! # uint256
+  long1Amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TransferFees @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  from: Bytes! # address
+  to: Bytes! # address
+  long0Fees: BigInt! # uint256
+  long1Fees: BigInt! # uint256
+  shortFees: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TransferLiquidity @entity(immutable: true) {
+  id: Bytes!
+  strike: BigInt! # uint256
+  maturity: BigInt! # uint256
+  from: Bytes! # address
+  to: Bytes! # address
+  liquidityAmount: BigInt! # uint160
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
 }
