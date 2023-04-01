@@ -23,3 +23,10 @@ type SetOwner @entity(immutable: true) {
   blockTimestamp: BigInt!
   transactionHash: Bytes!
 }
+
+type Pool @entity() {
+  id: Bytes!
+  caller: Bytes! #address
+  options: Bytes! #address
+  poolPair: Bytes! #address
+}
