@@ -1,0 +1,302 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITimeswapV2PeripheryUniswapV3QuoterCollectTransactionFees",
+  "sourceName": "@timeswap-labs/v2-periphery-uniswapV3/contracts/interfaces/lens/ITimeswapV2PeripheryUniswapV3QuoterCollectTransactionFees.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "revertString",
+          "type": "string"
+        }
+      ],
+      "name": "MulticallFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "shortAmountBurnt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "PassOptionBurnCallbackInfo",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "strike",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maturity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint24",
+              "name": "uniswapV3Fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenTo",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "excessLong0To",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "excessLong1To",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "excessShortTo",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isToken0",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "long0Requested",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "long1Requested",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "shortRequested",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TimeswapV2PeripheryUniswapV3QuoterCollectTransactionFeesParam",
+          "name": "param",
+          "type": "tuple"
+        }
+      ],
+      "name": "collectTransactionFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "excessLong0Amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "excessLong1Amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "excessShortAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint160",
+          "name": "uniswapV3SqrtPriceAfter",
+          "type": "uint160"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "liquidityTokens",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "results",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "optionFactory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "poolFactory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "strike",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maturity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "token0AndLong0Amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "token1AndLong1Amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "shortAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct TimeswapV2OptionBurnCallbackParam",
+          "name": "param",
+          "type": "tuple"
+        }
+      ],
+      "name": "timeswapV2OptionBurnCallback",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokens",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "uniswapV3Factory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "amount0Delta",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "amount1Delta",
+          "type": "int256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "uniswapV3SwapCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

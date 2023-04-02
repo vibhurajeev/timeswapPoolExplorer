@@ -1,0 +1,31 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Verify",
+  "sourceName": "@timeswap-labs/v2-periphery/contracts/libraries/Verify.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CanOnlyBeCalledByLiquidityTokensContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CanOnlyBeCalledByOptionContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CanOnlyBeCalledByPoolContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CanOnlyBeCalledByTokensContract",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204b626f3e591d28b78e7d800bc9a3b977be3c5bf49d79d0eeccf69cde40826a0464736f6c63430008080033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204b626f3e591d28b78e7d800bc9a3b977be3c5bf49d79d0eeccf69cde40826a0464736f6c63430008080033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

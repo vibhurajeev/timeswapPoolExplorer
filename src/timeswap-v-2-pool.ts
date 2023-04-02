@@ -25,7 +25,7 @@ import {
 
 export function handleAddFees(event: AddFeesEvent): void {
   let entity = new AddFees(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -44,7 +44,7 @@ export function handleAddFees(event: AddFeesEvent): void {
 
 export function handleBurn(event: BurnEvent): void {
   let entity = new Burn(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -68,7 +68,7 @@ export function handleCollectProtocolFees(
   event: CollectProtocolFeesEvent
 ): void {
   let entity = new CollectProtocolFees(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -91,7 +91,7 @@ export function handleCollectTransactionFee(
   event: CollectTransactionFeeEvent
 ): void {
   let entity = new CollectTransactionFee(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -112,7 +112,7 @@ export function handleCollectTransactionFee(
 
 export function handleDeleverage(event: DeleverageEvent): void {
   let entity = new Deleverage(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -131,7 +131,7 @@ export function handleDeleverage(event: DeleverageEvent): void {
 
 export function handleLeverage(event: LeverageEvent): void {
   let entity = new Leverage(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -151,7 +151,7 @@ export function handleLeverage(event: LeverageEvent): void {
 
 export function handleMint(event: MintEvent): void {
   let entity = new Mint(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -171,7 +171,7 @@ export function handleMint(event: MintEvent): void {
 
 export function handleRebalance(event: RebalanceEvent): void {
   let entity = new Rebalance(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -190,7 +190,7 @@ export function handleRebalance(event: RebalanceEvent): void {
 
 export function handleTransferFees(event: TransferFeesEvent): void {
   let entity = new TransferFees(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity
@@ -209,7 +209,7 @@ export function handleTransferFees(event: TransferFeesEvent): void {
 
 export function handleTransferLiquidity(event: TransferLiquidityEvent): void {
   let entity = new TransferLiquidity(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash
   )
   entity.strike = event.params.strike
   entity.maturity = event.params.maturity

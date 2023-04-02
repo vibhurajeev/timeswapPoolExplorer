@@ -1,0 +1,26 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SafeCast",
+  "sourceName": "@timeswap-labs/v2-library/contracts/SafeCast.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Uint160Overflow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Uint16Overflow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Uint96Overflow",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202112003644fbe844560173f02b72941ace6f463d0d01a4983789434bfabafd2f64736f6c63430008080033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202112003644fbe844560173f02b72941ace6f463d0d01a4983789434bfabafd2f64736f6c63430008080033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

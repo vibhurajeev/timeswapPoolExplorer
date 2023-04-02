@@ -7,7 +7,7 @@ import { AcceptOwner, Create, SetOwner } from "../generated/schema"
 
 export function handleAcceptOwner(event: AcceptOwnerEvent): void {
   let entity = new AcceptOwner(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash.toString()
   )
   entity.owner = event.params.owner
 
@@ -20,7 +20,7 @@ export function handleAcceptOwner(event: AcceptOwnerEvent): void {
 
 export function handleCreate(event: CreateEvent): void {
   let entity = new Create(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash.toString()
   )
   entity.caller = event.params.caller
   entity.option = event.params.option
@@ -35,7 +35,7 @@ export function handleCreate(event: CreateEvent): void {
 
 export function handleSetOwner(event: SetOwnerEvent): void {
   let entity = new SetOwner(
-    event.transaction.hash.concatI32(event.logIndex.toI32())
+    event.transaction.hash.toString()
   )
   entity.pendingOwner = event.params.pendingOwner
 

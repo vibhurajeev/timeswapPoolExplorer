@@ -1,0 +1,21 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "NoDelegateCall",
+  "sourceName": "@timeswap-labs/v2-option/contracts/NoDelegateCall.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "CannotBeDelegateCalled",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60a0604052348015600f57600080fd5b5030606081901b608052603f602b60003960005050603f6000f3fe6080604052600080fdfea2646970667358221220a0f2282ebec7dea571c8f467abddc8276e67a333f97f06673dc8b720def2452264736f6c63430008080033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a0f2282ebec7dea571c8f467abddc8276e67a333f97f06673dc8b720def2452264736f6c63430008080033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

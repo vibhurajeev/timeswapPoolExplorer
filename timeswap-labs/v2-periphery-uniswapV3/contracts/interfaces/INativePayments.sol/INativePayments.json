@@ -1,0 +1,18 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "INativePayments",
+  "sourceName": "@timeswap-labs/v2-periphery-uniswapV3/contracts/interfaces/INativePayments.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "refundNatives",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

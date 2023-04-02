@@ -1,0 +1,27 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "NativeTransfer",
+  "sourceName": "@timeswap-labs/v2-periphery-nodex/src/libraries/NativeTransfer.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "NativeTransferFailed",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220e515e14842ac1de60ff28cc0cb472cffa9d782a4372a5854810eb4a7d4175a6e64736f6c63430008080033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220e515e14842ac1de60ff28cc0cb472cffa9d782a4372a5854810eb4a7d4175a6e64736f6c63430008080033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

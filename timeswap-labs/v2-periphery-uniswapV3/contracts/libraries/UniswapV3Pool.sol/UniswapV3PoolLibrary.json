@@ -1,0 +1,32 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UniswapV3PoolLibrary",
+  "sourceName": "@timeswap-labs/v2-periphery-uniswapV3/contracts/libraries/UniswapV3Pool.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "amount0",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "amount1",
+          "type": "int256"
+        }
+      ],
+      "name": "PassCalculateInfo",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroPoolAddress",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c6a35ae68b27c3cf8a9416a5beb1dfbcb8cb93904be58a8e7f126860c246543b64736f6c63430008080033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c6a35ae68b27c3cf8a9416a5beb1dfbcb8cb93904be58a8e7f126860c246543b64736f6c63430008080033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
